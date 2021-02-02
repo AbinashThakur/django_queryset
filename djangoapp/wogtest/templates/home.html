@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<h1>Hello,<br>
+{% for data in data.all %}
+
+{{data.userid}}<br>
+{{data.city}}<br>
+{{data.price}}<br>
+{{data.year}}<br>
+{{data.county_name}}<br>
+{{data.state_code}}<br>
+{{data.state_name}}<br><br>
+
+{% endfor %}
+</h1>
+
+{% endblock %}
